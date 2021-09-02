@@ -23,11 +23,8 @@ b <- crossprod(X, y)
 # solve the system of equations
 x <- RcppML::nnls(a, b)
 
-# solve an unconstrained system of equations
-all.equal(base::solve(a, b), RcppML::nnls(a, b, nonneg = FALSE))
-
 # use only coordinate descent
-x <- RcppML::nnls(a, b, fast_maxit = 0, cd_maxit = 1000, cd_tol = 1e-8)
+x <- RcppML::nnls(a, b, fast_nnls = FALSE, cd_maxit = 1000, cd_tol = 1e-8)
 
 ## -----------------------------------------------------------------------------
 # simulate a sparse matrix

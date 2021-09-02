@@ -12,7 +12,7 @@
 
 <meta name="author" content="Zach DeBruine" />
 
-<meta name="date" content="2021-07-28" />
+<meta name="date" content="2021-09-01" />
 
 <title>Introduction to the RcppML package</title>
 
@@ -329,7 +329,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 
 <h1 class="title toc-ignore">Introduction to the RcppML package</h1>
 <h4 class="author">Zach DeBruine</h4>
-<h4 class="date">2021-07-28</h4>
+<h4 class="date">2021-09-01</h4>
 
 
 
@@ -356,12 +356,8 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <span id="cb3-8"><a href="#cb3-8"></a><span class="co"># solve the system of equations</span></span>
 <span id="cb3-9"><a href="#cb3-9"></a>x &lt;-<span class="st"> </span>RcppML<span class="op">::</span><span class="kw">nnls</span>(a, b)</span>
 <span id="cb3-10"><a href="#cb3-10"></a></span>
-<span id="cb3-11"><a href="#cb3-11"></a><span class="co"># solve an unconstrained system of equations</span></span>
-<span id="cb3-12"><a href="#cb3-12"></a><span class="kw">all.equal</span>(base<span class="op">::</span><span class="kw">solve</span>(a, b), RcppML<span class="op">::</span><span class="kw">nnls</span>(a, b, <span class="dt">nonneg =</span> <span class="ot">FALSE</span>))</span>
-<span id="cb3-13"><a href="#cb3-13"></a><span class="co">#&gt; [1] TRUE</span></span>
-<span id="cb3-14"><a href="#cb3-14"></a></span>
-<span id="cb3-15"><a href="#cb3-15"></a><span class="co"># use only coordinate descent</span></span>
-<span id="cb3-16"><a href="#cb3-16"></a>x &lt;-<span class="st"> </span>RcppML<span class="op">::</span><span class="kw">nnls</span>(a, b, <span class="dt">fast_maxit =</span> <span class="dv">0</span>, <span class="dt">cd_maxit =</span> <span class="dv">1000</span>, <span class="dt">cd_tol =</span> <span class="fl">1e-8</span>)</span></code></pre></div>
+<span id="cb3-11"><a href="#cb3-11"></a><span class="co"># use only coordinate descent</span></span>
+<span id="cb3-12"><a href="#cb3-12"></a>x &lt;-<span class="st"> </span>RcppML<span class="op">::</span><span class="kw">nnls</span>(a, b, <span class="dt">fast_nnls =</span> <span class="ot">FALSE</span>, <span class="dt">cd_maxit =</span> <span class="dv">1000</span>, <span class="dt">cd_tol =</span> <span class="fl">1e-8</span>)</span></code></pre></div>
 <p><code>RcppML::solve</code> implements a new and fastest-in-class algorithm for non-negative least squares:</p>
 <ol style="list-style-type: decimal">
 <li><em>initialization</em> is done by solving for the unconstrained least squares solution.</li>
@@ -408,7 +404,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <span id="cb6-3"><a href="#cb6-3"></a>model &lt;-<span class="st"> </span>RcppML<span class="op">::</span><span class="kw">nmf</span>(A_sym, <span class="dv">10</span>, <span class="dt">verbose =</span> F)</span></code></pre></div>
 <p>Mean squared error of a factorization can be calculated for a given model using the <code>RcppML::mse</code> function:</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>RcppML<span class="op">::</span><span class="kw">mse</span>(A_sym, model<span class="op">$</span>w, model<span class="op">$</span>d, model<span class="op">$</span>h)</span>
-<span id="cb7-2"><a href="#cb7-2"></a><span class="co">#&gt; [1] 1.34062</span></span></code></pre></div>
+<span id="cb7-2"><a href="#cb7-2"></a><span class="co">#&gt; [1] 1.647807</span></span></code></pre></div>
 </div>
 
 
