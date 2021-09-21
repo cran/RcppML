@@ -86,19 +86,4 @@ namespace RcppML {
     }
   };
 }
-
-namespace Rcpp{
-
-  template <> RcppML::SparseMatrix as(SEXP mat) { return RcppML::SparseMatrix(mat); }
-  
-  template <> SEXP wrap(const RcppML::SparseMatrix& sm) {
-    S4 s(std::string("dgCMatrix"));
-    s.slot("i") = sm.i;
-    s.slot("p") = sm.p;
-    s.slot("x") = sm.x;
-    s.slot("Dim") = sm.Dim;
-    return s;
-  }
-}
-
 #endif
