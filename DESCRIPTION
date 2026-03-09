@@ -1,7 +1,7 @@
 Package: RcppML
 Type: Package
 Title: Rcpp Machine Learning Library
-Version: 0.3.7
+Version: 0.3.7.1
 Date: 2021-09-21
 Authors@R: person("Zachary", "DeBruine", 
     email = "zacharydebruine@gmail.com", 
@@ -19,8 +19,9 @@ Config/testthat/edition: 3
 URL: https://github.com/zdebruine/RcppML
 BugReports: https://github.com/zdebruine/RcppML/issues
 NeedsCompilation: yes
-Packaged: 2021-09-21 18:39:44 UTC; Owner
-Author: Zachary DeBruine [aut, cre] (<https://orcid.org/0000-0003-2234-4827>)
+Packaged: 2026-03-09 07:57:53 UTC; hornik
+Author: Zachary DeBruine [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-2234-4827>)
 Maintainer: Zachary DeBruine <zacharydebruine@gmail.com>
 Repository: CRAN
-Date/Publication: 2021-09-21 19:00:02 UTC
+Date/Publication: 2026-03-09 08:16:34 UTC

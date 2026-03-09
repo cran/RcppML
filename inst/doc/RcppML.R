@@ -4,9 +4,9 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 
-## ---- eval = FALSE------------------------------------------------------------
-#  library(devtools)
-#  install_github("zdebruine/RcppML")
+## ----eval = FALSE-------------------------------------------------------------
+# library(devtools)
+# install_github("zdebruine/RcppML")
 
 ## -----------------------------------------------------------------------------
 library(RcppML)

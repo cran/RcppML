@@ -1,4 +1,4 @@
-c5b396120c19d467d7f4dc8d06cafdca *DESCRIPTION
+04080ba0140c96237cae9e0fc50afbd0 *DESCRIPTION
 3377d5684e74f96f3c2c78f6d7f166fa *NAMESPACE
 1fedb39976b1fcdcd0a064ad47ab631c *R/RcppExports.R
 9181ceda27553909d50dedfcadb3c985 *R/RcppML.R
@@ -8,10 +8,10 @@ d2a7e00df8cf5f7727faaa37628ee17f *R/mse.R
 0da3f016442fbaa1c793722152cf77e1 *R/nmf.R
 ce6ca375a07fe70c45bcfa2de2160aa3 *R/project.R
 9712183ad270b6a912e33eda10eee90a *R/threads.R
-be58b4dc94d8ea288647b7ab29b54fa8 *build/vignette.rds
-6a7eba04c33f0af82e9bc5c0a10723fa *inst/doc/RcppML.R
+5609408e9d6969e85c6815f3239f2266 *build/vignette.rds
+e063f4b36f0cdae4c6fa21363b56d513 *inst/doc/RcppML.R
 00220b1c42c7736eefe3a01528096f1a *inst/doc/RcppML.Rmd
-c2c943798bc107224191c6d2583d01a8 *inst/doc/RcppML.html
+ad4d75bc33289bd9abca823060d09fcc *inst/doc/RcppML.html
 9a45c2574773503fd3479d93eb41837a *inst/include/RcppML.hpp
 1269cf76d78146bd4ab66e8e4f9f69dd *inst/include/RcppML/SparseMatrix.hpp
 f461d4e6447f0f191b0b966109fe25b4 *inst/include/RcppML/bipartition.hpp
@@ -29,8 +29,8 @@ fae5048377c91c4dc8005d4557dd00b8 *man/mse.Rd
 2e046d807bdc0f7d7fc29c8e4dc2d7ab *man/nnls.Rd
 863469d94bef888befa4238ed0bbf504 *man/project.Rd
 e22fae8013f7fcf6e5a7bf791831e5dd *man/setRcppMLthreads.Rd
-4ce1199386023d946899a147df80fe8e *src/Makevars
-4ce1199386023d946899a147df80fe8e *src/Makevars.win
+795251046ad417dadfc5fcda8533e00b *src/Makevars
+9fe354026de9c2cc9753be258d096ce3 *src/Makevars.win
 bf245f198bdc25054b6960435dd7f54a *src/RcppExports.cpp
 5bc93e20f6c3156f0623a170b178eb1b *src/RcppFunctions.cpp
 fec3faba2aad06bd6c3bc0509d0360ed *tests/testthat.R
